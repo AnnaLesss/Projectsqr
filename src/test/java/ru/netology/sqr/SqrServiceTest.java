@@ -7,11 +7,10 @@ public class SqrServiceTest {
     @Test
     public void number() {
         SqrService service = new SqrService();
-        int x = 36;
-        int expected = 6;
-        int actual = service.count(x);
+
+        int expected = 4;
+        int actual = service.count(200,350);
 
         Assertions.assertEquals(expected, actual);
     }
     }
-}
